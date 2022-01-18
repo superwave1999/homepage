@@ -1,0 +1,47 @@
+/* Page transition */
+.trans-enter-active,
+.trans-leave-active {
+  transition: transform 0.25s, opacity 0.25s;
+}
+.trans-enter,
+.trans-leave-to {
+  opacity: 0;
+  transform: translateY(0.2rem);
+  pointer-events: none;
+}
+
+/* Shadowed container */
+.shaded, #nuxt-content img {
+  box-shadow: #121212 0 4px 30px -12px;
+}
+
+.shaded.colour-dark, #nuxt-content.colour-dark img {
+  box-shadow: #888 0 4px 30px -12px;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+/* Override image viewer padding */
+body {
+  padding: 0 !important;
+}
+
+/* Glass image effect */
+.glassimg-relative {
+  position: relative;
+  overflow: hidden;
+}
+
+.glassimg {
+  z-index: 1 !important;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
