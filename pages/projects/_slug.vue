@@ -158,10 +158,10 @@ export default {
             inline: false,
             loading: true,
             loop: true,
-            movable: false,
+            movable: true,
             rotatable: false,
             scalable: false,
-            zoomable: false,
+            zoomable: true,
             fullscreen: true,
             zIndex: 3000
           });

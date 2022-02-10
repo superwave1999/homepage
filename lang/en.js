@@ -2,7 +2,7 @@ export default {
     c: {
         card: {
             name: 'Imanol Romera',
-            short: 'Full Stack Web Developer based in Granada, Spain.'
+            short: 'Full stack web developer based in Granada, Spain.'
         },
         footer: {
             copy: '© {year} Imanol Romera. All Rights Reserved.',
@@ -23,7 +23,7 @@ export default {
         headTitle: 'Imanol Romera',
         about: {
             heading: 'Work',
-            text: 'Imanol is a full-stack web developer based in Granada with a passion for building tailored services and stuff he deems useful. Being a strong team-player he collaborates in all the steps of product development, from mock-ups, through programming, concluding with server deployment and product launch. As an open-source enthusiast, he makes the effort to use as many OSS tools as possible, and release many personal bits of code to the world.',
+            text: 'Imanol is a full stack web developer based in Granada with a passion for building tailored services and tools he deems useful. Being a strong team-player he collaborates in all the steps of product development, from mock-ups, through programming, concluding with server deployment and product launch. As an open-source enthusiast, he makes the effort to use as many OSS tools as possible, and release many personal bits of code to the world.',
         },
         buttonText: 'My portfolio',
         bio: {
@@ -31,14 +31,13 @@ export default {
             n1: 'Born in Wolverhampton, England.',
             n2: 'Moved to Spain.',
             n3: 'Started teaching self in computers. Built first desktop PC.',
-            n4: 'Graduated from high school (IES Los Neveros).',
-            n5: 'Obtained a Vocational Education and Training qualification (VET/Grado Medio) in Computer Systems and Networking at IES Zaidin-Vergeles.',
-            n6: 'Obtained a Higher-education qualification (HNC/Grado Superior) in Web Development at IES Zaidin-Vergeles.',
-            n7: 'Works at Comerline.'
+            n4: 'Obtained a Vocational Education and Training qualification (VET/Grado Medio) in Computer Systems and Networking at IES Zaidin-Vergeles.',
+            n5: 'Obtained a Higher-education qualification (HNC/Grado Superior) in Web Development at IES Zaidin-Vergeles.',
+            n6: 'Works at Comerline.'
         },
         hobby: {
             heading: 'Hobbies & Side-gigs',
-            text: 'When not coding he enjoys gaming, making music, and watching anime.'
+            text: 'When not coding he enjoys gaming, playing the drums, and watching anime.'
         }
     },
     projects: {
