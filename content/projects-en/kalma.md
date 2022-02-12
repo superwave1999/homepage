@@ -1,7 +1,6 @@
 ---
 title: Kalma
 description: 'Storefront for a wholesaler of dental products'
-showCreatedAt: true
 startDate: '2019'
 endDate: '2022'
 previewImage: '/content/projects/kalma-mp-cmp.jpg'

@@ -1,7 +1,6 @@
 ---
 title: Capdell
 description: 'Product image generator for each product variation'
-showCreatedAt: true
 endDate: '2020'
 previewImage: '/content/projects/capdell-main-cmp.jpg'
 infoPlatform: 'Web'

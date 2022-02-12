@@ -26,6 +26,7 @@
     "core-js": "^3.15.1",
     "feather-icons": "^4.28.0",
     "nuxt": "^2.15.7",
+    "roman-numerals": "^0.3.2",
     "simplebar-vue": "^1.6.8",
     "viewerjs": "^1.10.2"
   },

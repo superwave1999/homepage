@@ -1,7 +1,6 @@
 ---
 title: Kalma
 description: 'Marketplace para un mayorista de productos dentales'
-showCreatedAt: true
 startDate: '2019'
 endDate: '2022'
 previewImage: '/content/projects/kalma-mp-cmp.jpg'

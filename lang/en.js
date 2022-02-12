@@ -53,7 +53,6 @@ export default {
         website: 'Website',
         platform: 'Platform',
         stack: 'Stack',
-        posted: 'Originally posted {date}.',
         prevNext: 'Previous/Next post'
     }
 }

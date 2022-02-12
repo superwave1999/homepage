@@ -14,6 +14,7 @@
 </template>
 
 <script lang="js">
+import { toRoman } from 'roman-numerals';
 import colourMode from '@/mixins/colourmode.js';
 
 export default {
@@ -21,7 +22,7 @@ export default {
   mixins: [colourMode],
   data () {
     return {
-      year: new Date().getFullYear(),
+      year: toRoman(new Date().getFullYear()),
       mainStyles: {
         dark: {
           color: 'darkText.400'

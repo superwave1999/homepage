@@ -1,7 +1,6 @@
 ---
 title: Crispythings
 description: 'A Wordpress blog installation'
-showCreatedAt: true
 endDate: '2021'
 previewImage: '/content/projects/crispy-cmp.jpg'
 infoPlatform: 'Web'

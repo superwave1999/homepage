@@ -1,7 +1,6 @@
 ---
 title: Capdell
 description: 'Generador de imágenes de producto según su color'
-showCreatedAt: true
 endDate: '2020'
 previewImage: '/content/projects/capdell-main-cmp.jpg'
 infoPlatform: 'Web'

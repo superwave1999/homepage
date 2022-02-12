@@ -42,7 +42,7 @@
         target="_blank"
         href="https://www.comerline.es/"
         size="lg"
-        left-icon="moon"
+        left-icon="company"
         variant="link"
         mx="2"
         my="2"

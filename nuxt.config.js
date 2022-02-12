@@ -1,3 +1,4 @@
+import * as fs from 'fs';
 import feather from 'feather-icons';
 import customTheme from './custom-theme.js'
 
@@ -5,6 +6,10 @@ const icons = {};
 Object.entries(feather.icons).forEach(([key, ico]) => {
   icons[key] = { path: ico.toSvg() }
 });
+icons.company = {
+  path: fs.readFileSync('./static/company.svg', 'utf8'),
+  viewBox: '0 0 500 414.123'
+};
 
 export default {
   // Target: https://go.nuxtjs.dev/config-target

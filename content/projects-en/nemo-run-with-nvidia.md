@@ -1,7 +1,6 @@
 ---
 title: nemo-run-with-nvidia
 description: 'Right-click executables in Linux and run on NVIDIA GPU'
-showCreatedAt: true
 endDate: '2019'
 previewImage: '/content/projects/nemo-run-with-nvidia.jpg'
 infoPlatform: 'Linux'

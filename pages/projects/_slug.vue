@@ -98,15 +98,6 @@
           >
         </c-list-item>
       </c-list>
-      <c-text
-        v-if="article.showCreatedAt"
-        my="4"
-        opacity="0.7"
-        text-align="left"
-        >{{
-          $t('project.posted', { date: formatDate(article.createdAt) })
-        }}</c-text
-      >
       <separator v-if="prev || next" />
       <c-text v-if="prev || next" mb="2" text-align="center">{{
         $t('project.prevNext')

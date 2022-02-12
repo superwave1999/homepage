@@ -1,7 +1,6 @@
 ---
 title: Acorn
 description: 'Un bot de Telegram para Animal Crossing'
-showCreatedAt: true
 startDate: '2020'
 endDate: '2021'
 previewImage: '/content/projects/juliana-cmp.jpg'
@@ -14,7 +13,7 @@ links:
 ---
 !["Lista principal"](/content/projects/juliana.jpg)
 
-Un proyecto personal creado para amigos que administran un grupo de Telegram dedicado al intercambio de nabos con el personaje Juliana.
+Un proyecto personal creado para amigos que administran un grupo de Telegram dedicado al intercambio de nabos con el personaje Juliana en el videojuego Animal Crossing del 2020.
 
 Cuando los nabos alcanzan un precio decente en la isla de un jugador, este jugador crea una lista hablando con el bot en privado.
 

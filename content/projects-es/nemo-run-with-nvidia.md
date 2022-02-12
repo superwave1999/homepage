@@ -1,7 +1,6 @@
 ---
 title: nemo-run-with-nvidia
 description: 'Clic derecho sobre programas en Linux para ejecutarlos en la GPU NVIDIA'
-showCreatedAt: true
 endDate: '2019'
 previewImage: '/content/projects/nemo-run-with-nvidia.jpg'
 infoPlatform: 'Linux'
