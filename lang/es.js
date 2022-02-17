@@ -23,7 +23,7 @@ export default {
         headTitle: 'Imanol Romera',
         about: {
             heading: 'Trabajo',
-            text: 'Imanol es un desarrollador web full stack ubicado en Granada con una pasión por crear servicios personalizados y herramientas que considera útiles. Siendo un gran trabajador en equipo, colabora en todas las etapas de desarrollo de sus proyectos, desde mock-ups, pasando por programación, y terminando con el despliegue en servidores y el lanzamiento del producto. Siendo un entusiasta por el código abierto, se esfuerza en usar tantas herramientas OSS como sea posible, y abre al público sus desarrollos personales.',
+            text: 'Imanol es un desarrollador web full stack ubicado en Granada con una pasión por crear servicios personalizados y herramientas que considera útiles. Siendo un gran trabajador en equipo, colabora en todas las etapas de desarrollo de sus proyectos, desde mock-ups, pasando por programación, y terminando con el despliegue en servidores y el lanzamiento del producto. Siendo un entusiasta por el código abierto, se esfuerza en usar tantas herramientas OSS como sea posible, y abre al público sus desarrollos personales. También es bilingüe.',
         },
         buttonText: 'Mi portafolio',
         bio: {

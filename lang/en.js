@@ -23,7 +23,7 @@ export default {
         headTitle: 'Imanol Romera',
         about: {
             heading: 'Work',
-            text: 'Imanol is a full stack web developer based in Granada with a passion for building tailored services and tools he deems useful. Being a strong team-player he collaborates in all the steps of product development, from mock-ups, through programming, concluding with server deployment and product launch. As an open-source enthusiast, he makes the effort to use as many OSS tools as possible, and release many personal bits of code to the world.',
+            text: 'Imanol is a full stack web developer based in Granada with a passion for building tailored services and tools he deems useful. Being a strong team-player he collaborates in all the steps of product development, from mock-ups, through programming, concluding with server deployment and product launch. As an open-source enthusiast, he makes the effort to use as many OSS tools as possible, and release many personal bits of code to the world. He is also bilingual.',
         },
         buttonText: 'My portfolio',
         bio: {
