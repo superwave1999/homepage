@@ -27,21 +27,3 @@ html {
 body {
   padding: 0 !important;
 }
-
-/* Glass image effect */
-.glassimg-relative {
-  position: relative;
-  overflow: hidden;
-}
-
-.glassimg {
-  z-index: 1 !important;
-  overflow: hidden;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  left: 0;
-}

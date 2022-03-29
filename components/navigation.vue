@@ -16,6 +16,9 @@
                 :class="{ underline: linkActive(link.route) }"
                 >{{ $t(link.text) }}</c-menu-item
               >
+              <c-menu-item as="a" target="_blank" :href="source"
+                >Code on GitHub</c-menu-item
+              >
             </c-menu-list>
           </c-menu>
         </c-box>
@@ -44,6 +47,18 @@
         </c-button>
       </c-box>
       <c-box :p="[1, 2, 4, 4]">
+        <c-icon-button
+          icon="github"
+          variant="solid"
+          variant-color="gray"
+          mx="1"
+          rounded="lg"
+          as="a"
+          target="_blank"
+          aria-label="View source code on GitHub"
+          :display="['none', 'none', 'inline-flex']"
+          :href="source"
+        />
         <c-icon-button
           :icon="colorMode === 'light' ? 'moon' : 'sun'"
           :variant-color="colorMode === 'light' ? 'indigo' : 'yellow'"
@@ -94,7 +109,8 @@ export default {
       },
       routes: [
         {text: 'nav.projects', route: 'projects'}
-      ]
+      ],
+      source: 'https://github.com/superwave1999/homepage'
     }
   },
   computed: {
