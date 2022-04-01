@@ -56,20 +56,27 @@
         spacing="2"
         my="4"
         align-items="start"
+        class="no-overflow"
       >
-        <c-box v-if="article.infoWebsite">
-          <c-tag size="sm" variant-color="green">{{
-            $t('project.website')
-          }}</c-tag>
-          <c-button
-            as="a"
-            target="_blank"
-            :href="article.infoWebsite"
-            ml="2"
-            variant="link"
-            variant-color="blue"
-            >{{ article.infoWebsite }}</c-button
-          >
+        <c-box
+          v-if="article.infoWebsite"
+          class="web-box"
+          :class="{ 'colour-dark': colorMode === 'dark' }"
+        >
+          <c-tag size="sm" variant-color="green"
+            >{{ $t('project.website') }}
+          </c-tag>
+          <div class="no-overflow">
+            <c-button
+              as="a"
+              target="_blank"
+              :href="article.infoWebsite"
+              ml="2"
+              variant="link"
+              variant-color="blue"
+              >{{ article.infoWebsite }}</c-button
+            >
+          </div>
         </c-box>
         <c-box v-if="article.infoPlatform">
           <c-tag size="sm" variant-color="green">{{
@@ -85,7 +92,11 @@
         </c-box>
       </c-stack>
       <c-list v-if="article.links && article.links.length" spacing="2" my="4">
-        <c-list-item v-for="link in article.links" :key="link.href">
+        <c-list-item
+          v-for="link in article.links"
+          :key="link.href"
+          class="link-box"
+        >
           <c-button
             as="a"
             target="_blank"
@@ -189,6 +200,41 @@ export default {
 </script>
 
 <style lang="css">
+.no-overflow {
+  overflow: hidden;
+}
+
+.web-box {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.web-box > .no-overflow {
+  flex: 1 0;
+}
+
+.web-box::before {
+  z-index: 2;
+  content: '';
+  width: 2ch;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: linear-gradient(to right, transparent 0, #fff5eb 100%);
+}
+
+.web-box.colour-dark::before {
+  background: linear-gradient(to right, transparent 0, #0a090b 100%);
+}
+
+.link-box > a {
+  white-space: normal;
+  word-break: break-word;
+}
+
 .nuxt-content {
   text-align: justify;
   font-family: ArchivoVariable, sans-serif;
