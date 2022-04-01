@@ -17,6 +17,7 @@ module.exports = {
   ],
   // add your custom rules here
   rules: {
-    'no-new': 'off'
+    'no-new': 'off',
+    'vue/multi-word-component-names': 'off'
   }
 }

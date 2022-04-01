@@ -16,9 +16,9 @@
                 :class="{ underline: linkActive(link.route) }"
                 >{{ $t(link.text) }}</c-menu-item
               >
-              <c-menu-item as="a" target="_blank" :href="source"
-                >Code on GitHub</c-menu-item
-              >
+              <c-menu-item as="a" target="_blank" :href="source">{{
+                $t('nav.textSource')
+              }}</c-menu-item>
             </c-menu-list>
           </c-menu>
         </c-box>
@@ -55,16 +55,16 @@
           rounded="lg"
           as="a"
           target="_blank"
-          aria-label="View source code on GitHub"
+          :aria-label="$t('nav.textSourceLong')"
           :display="['none', 'none', 'inline-flex']"
           :href="source"
         />
         <c-icon-button
           :icon="colorMode === 'light' ? 'moon' : 'sun'"
           :variant-color="colorMode === 'light' ? 'indigo' : 'yellow'"
-          :aria-label="`Switch to ${
-            colorMode === 'light' ? 'dark' : 'light'
-          } mode`"
+          :aria-label="
+            $t(colorMode === 'light' ? 'nav.setDarkMode' : 'nav.setLightMode')
+          "
           mx="1"
           rounded="lg"
           @click="toggleColorMode"
@@ -131,26 +131,30 @@ export default {
 </script>
 
 <style lang="css" scoped>
-@keyframes terminalFlash {
+@keyframes terminal-flash {
   0% {
     color: inherit;
   }
+
   49% {
     color: inherit;
   }
+
   60% {
     color: transparent;
   }
+
   99% {
     color: transparent;
   }
+
   100% {
     color: inherit;
   }
 }
 
 span.flash {
-  animation: terminalFlash 1s infinite;
+  animation: terminal-flash 1s infinite;
 }
 
 nav {

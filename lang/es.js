@@ -13,7 +13,11 @@ export default {
     },
     nav: {
         home: 'Inicio',
-        projects: 'Proyectos'
+        projects: 'Proyectos',
+        textSource: 'Ver en GitHub',
+        textSourceLong: 'Ver código fuente en GitHub',
+        setDarkMode: 'Cambiar a tema oscuro',
+        setLightMode: 'Cambiar a tema claro'
     },
     e404: {
         top: '¡Ups! La página solicitada no ha sido encontrada.',

@@ -3,6 +3,7 @@
 .trans-leave-active {
   transition: transform 0.25s, opacity 0.25s;
 }
+
 .trans-enter,
 .trans-leave-to {
   opacity: 0;

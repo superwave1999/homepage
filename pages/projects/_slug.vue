@@ -196,7 +196,7 @@ export default {
 }
 
 .nuxt-content a {
-  color: #1a72ff;
+  color: rgb(26 114 255);
 }
 
 .nuxt-content p {
@@ -215,7 +215,7 @@ export default {
 }
 
 .nuxt-content.colour-dark a {
-  color: #7db1ff;
+  color: rgb(125 177 255);
 }
 
 .nuxt-content code {
@@ -224,18 +224,18 @@ export default {
 }
 
 .nuxt-content p > code {
-  color: rgb(202, 86, 78);
+  color: rgb(202 86 78);
   padding: 0.2em;
 }
 
 .nuxt-content pre > code {
-  color: rgb(174, 190, 86);
+  color: rgb(174 190 86);
   padding: 0.1em;
 }
 
 .nuxt-content pre,
 .nuxt-content p > code {
-  background-color: rgb(38, 40, 45);
+  background-color: rgb(38 40 45);
   border-radius: 0.4em;
 }
 </style>
