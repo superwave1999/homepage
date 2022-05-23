@@ -23,7 +23,7 @@
     "@nuxt/content": "^1.15.1",
     "@nuxtjs/emotion": "^0.1.0",
     "@nuxtjs/i18n": "^7.2.2",
-    "core-js": "^3.22.5",
+    "core-js": "^3.22.6",
     "feather-icons": "^4.29.0",
     "nuxt": "^2.15.8",
     "roman-numerals": "^0.3.2",
