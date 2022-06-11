@@ -43,7 +43,7 @@
         :document="article"
         :class="{ 'colour-dark': colorMode === 'dark' }"
       />
-      <separator
+      <custom-separator
         v-if="
           article.infoWebsite ||
           article.infoPlatform ||
@@ -109,7 +109,7 @@
           >
         </c-list-item>
       </c-list>
-      <separator v-if="prev || next" />
+      <custom-separator v-if="prev || next" />
       <c-text v-if="prev || next" mb="2" text-align="center">{{
         $t('project.prevNext')
       }}</c-text>

@@ -14,7 +14,7 @@
 import colourMode from '@/mixins/colourmode.js';
 
 export default {
-  name: 'Separator',
+  name: 'CustomSeparator',
   mixins: [colourMode],
   data() {
     return {

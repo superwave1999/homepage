@@ -11,10 +11,10 @@
               <c-menu-item
                 v-for="link in routes"
                 :key="link.text"
-                :as="(link.route) ? 'nuxt-link' : 'a'"
-                :to="(link.route) ? localePath(link.route) : '#'"
-                :href="(link.href) ? link.href : '#'"
-                :target="(link.route) ? '' : '_blank'"
+                :as="link.route ? 'nuxt-link' : 'a'"
+                :to="link.route ? localePath(link.route) : '#'"
+                :href="link.href ? link.href : '#'"
+                :target="link.route ? '' : '_blank'"
                 class="add-pointer"
                 :class="{ underline: linkActive(link.route) }"
                 >{{ $t(link.text) }}</c-menu-item
@@ -40,15 +40,15 @@
         <c-button
           v-for="link in routes"
           :key="link.text"
-          :as="(link.route) ? 'nuxt-link' : 'a'"
+          :as="link.route ? 'nuxt-link' : 'a'"
           :variant="linkActive(link.route) ? 'solid' : 'outline'"
           class="desktop-menu"
           mx="1"
           :variant-color="link.colour || 'green'"
           rounded="lg"
-          :to="(link.route) ? localePath(link.route) : ''"
-          :href="(link.href) ? link.href : '#'"
-          :target="(link.route) ? '' : '_blank'"
+          :to="link.route ? localePath(link.route) : ''"
+          :href="link.href ? link.href : '#'"
+          :target="link.route ? '' : '_blank'"
         >
           {{ $t(link.text) }}
         </c-button>
@@ -99,7 +99,7 @@ import routing from '@/mixins/routing.js';
 import colourMode from '@/mixins/colourmode.js';
 
 export default {
-  name: 'Navigation',
+  name: 'MainNavigation',
   mixins: [routing, colourMode],
   inject: ['$toggleColorMode'],
   data () {

@@ -14,14 +14,14 @@
         "
       >
         <c-reset />
-        <Navigation />
+        <MainNavigation />
         <simplebar
           style="height: 100vh"
           class="custom-scroll"
           data-simplebar-auto-hide="false"
         >
           <nuxt />
-          <Footer />
+          <FooterText />
         </simplebar>
       </c-box>
     </c-color-mode-provider>
@@ -33,8 +33,8 @@ import simplebar from 'simplebar-vue';
 
 export default {
   components: {
-    Navigation: () => import('../components/navigation.vue'),
-    Footer: () => import('../components/footer.vue'),
+    MainNavigation: () => import('../components/navigation-main.vue'),
+    FooterText: () => import('../components/footer-text.vue'),
     simplebar
   },
   data() {

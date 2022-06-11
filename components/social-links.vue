@@ -57,7 +57,7 @@
 import colourMode from '@/mixins/colourmode.js';
 
 export default {
-  name: 'Links',
+  name: 'SocialLinks',
   mixins: [colourMode],
   data () {
     return {

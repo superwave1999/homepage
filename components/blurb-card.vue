@@ -41,7 +41,7 @@
 import colourMode from '@/mixins/colourmode.js';
 
 export default {
-  name: 'Card',
+  name: 'BlurbCard',
   mixins: [colourMode],
   data () {
     return {

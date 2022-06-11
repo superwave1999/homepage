@@ -18,7 +18,7 @@ import { toRoman } from 'roman-numerals';
 import colourMode from '@/mixins/colourmode.js';
 
 export default {
-  name: 'Footer',
+  name: 'FooterText',
   mixins: [colourMode],
   data () {
     return {

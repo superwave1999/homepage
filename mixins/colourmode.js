@@ -3,6 +3,6 @@ export default {
   computed: {
     colorMode() {
       return this.$chakraColorMode()
-    }
-  }
+    },
+  },
 }

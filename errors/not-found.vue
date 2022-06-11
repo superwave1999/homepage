@@ -28,6 +28,7 @@ import routing from '@/mixins/routing.js';
 import colourMode from '@/mixins/colourmode.js';
 
 export default {
+  name: 'ErrorNotFound',
   mixins: [routing, colourMode],
   data () {
     return {

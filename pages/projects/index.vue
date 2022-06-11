@@ -102,7 +102,7 @@
           <c-text font-size="0.9em">{{ post.description }}</c-text>
         </c-box>
       </c-flex>
-      <separator />
+      <custom-separator />
       <c-box my="3">
         <c-button
           :disabled="!showMoreButton"

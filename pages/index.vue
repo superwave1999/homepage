@@ -8,8 +8,8 @@
     justify-content="center"
     align-items="center"
   >
-    <Card />
-    <Links />
+    <BlurbCard />
+    <SocialLinks />
     <c-box w="100%" mb="5" mt="5" d="flex" flex-dir="column">
       <c-heading
         my="3"
@@ -105,8 +105,8 @@ import colourMode from '@/mixins/colourmode.js';
 export default {
   name: 'App',
   components: {
-    Card: () => import('../components/card.vue'),
-    Links: () => import('../components/links.vue'),
+    BlurbCard: () => import('../components/blurb-card.vue'),
+    SocialLinks: () => import('../components/social-links.vue'),
   },
   mixins: [colourMode],
   data () {
