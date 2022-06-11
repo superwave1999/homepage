@@ -1,7 +1,7 @@
 <template>
   <c-box v-bind="mainStyles[colorMode]" position="fixed" as="nav" w="100vw">
     <c-flex class="nav-container" align="center" justify="space-between">
-      <c-box :p="[1, 2, 4, 4]">
+      <c-box :p="[1, 2, 4, 4]" class="flex">
         <c-box class="mobile-menu">
           <c-menu style="display: inline">
             <c-menu-button mx="1" p="0" variant-color="green" rounded="lg">
@@ -11,8 +11,11 @@
               <c-menu-item
                 v-for="link in routes"
                 :key="link.text"
-                as="nuxt-link"
-                :to="localePath(link.route)"
+                :as="(link.route) ? 'nuxt-link' : 'a'"
+                :to="(link.route) ? localePath(link.route) : '#'"
+                :href="(link.href) ? link.href : '#'"
+                :target="(link.route) ? '' : '_blank'"
+                class="add-pointer"
                 :class="{ underline: linkActive(link.route) }"
                 >{{ $t(link.text) }}</c-menu-item
               >
@@ -29,19 +32,23 @@
           :pr="[2, 4]"
           mx="1"
           rounded="lg"
-          @click="nuxtLink(localePath('index'))"
+          as="nuxt-link"
+          :to="localePath('index')"
         >
           home@web:~$&nbsp;<span class="flash">_</span>
         </c-button>
         <c-button
           v-for="link in routes"
           :key="link.text"
+          :as="(link.route) ? 'nuxt-link' : 'a'"
           :variant="linkActive(link.route) ? 'solid' : 'outline'"
           class="desktop-menu"
           mx="1"
-          variant-color="green"
+          :variant-color="link.colour || 'green'"
           rounded="lg"
-          @click="nuxtLink(localePath(link.route))"
+          :to="(link.route) ? localePath(link.route) : ''"
+          :href="(link.href) ? link.href : '#'"
+          :target="(link.route) ? '' : '_blank'"
         >
           {{ $t(link.text) }}
         </c-button>
@@ -108,7 +115,8 @@ export default {
         }
       },
       routes: [
-        {text: 'nav.projects', route: 'projects'}
+        {text: 'nav.projects', route: 'projects', colour: 'orange'},
+        {text: 'nav.tuble', href: 'https://tuble.iromera.com', colour: 'cyan'}
       ],
       source: 'https://github.com/superwave1999/homepage'
     }
@@ -153,6 +161,10 @@ export default {
   }
 }
 
+.add-pointer {
+  cursor: pointer;
+}
+
 span.flash {
   animation: terminal-flash 1s infinite;
 }
@@ -183,7 +195,7 @@ nav > .nav-container {
   }
 
   .desktop-menu {
-    display: initial !important;
+    display: inline-flex !important;
   }
 }
 
