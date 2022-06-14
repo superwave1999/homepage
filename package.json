@@ -17,7 +17,7 @@
     "lintfix": "npm run lintfix:js && npm run lintfix:style"
   },
   "dependencies": {
-    "@chakra-ui/nuxt": "^0.5.0",
+    "@chakra-ui/nuxt": "^0.6.0",
     "@fontsource/archivo": "^4.5.7",
     "@fontsource/raleway": "^4.5.9",
     "@nuxt/content": "^1.15.1",
