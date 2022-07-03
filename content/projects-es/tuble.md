@@ -20,14 +20,14 @@ Nota: Proyecto cerrado. Hay demasiadas pocas visitas a la web para incorporar an
 
 Tuble es un juego de navegador inspirado por el minijuego de hackear de Bioshock.
 
-Desarrollé el juego rapidamente para lucrarme del hype del Wordle a principios de 2022.
+Desarrollé el juego rápidamente para lucrarme del hype del Wordle a principios de 2022.
 
 Se realizaron ciertas modificaciones al formato como contar los movimientos de los jugadores y el tiempo que tardan en completar el mapa.
 
-En vez de salir electrocutado por robots como en el minijuego original, se han introducido penalizaciones de tiempo.
+En vez de salir electrocutado por robots, como en el minijuego original, se han introducido penalizaciones de tiempo.
 
 El proyecto consiste en una API ligera escrita en Go para generar los mapas diariamente y para servir y verificar estos mediante una API.
 
-Tambien hay un frontend escrito en Vue usando Nuxt. Guarda el progreso del jugador en el dispositivo local, soporta modo oscuro e interactua con el API.
+También hay un frontend escrito en Vue usando Nuxt. Guarda el progreso del jugador en el dispositivo local, soporta modo oscuro e interactúa con la API.
 
 !["Gameplay"](/content/projects/tuble.jpg)

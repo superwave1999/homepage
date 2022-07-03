@@ -18,15 +18,15 @@ links:
 
 Note: Project discontinued. Too small number of website visits to introduce ads. Also, my intention was to show an ad below the "success" modal, but the providers I had in mind do not allow this.
 
-Tuble is a browser-based game inspired by Bioshock's hacking minigame.
+Tuble is a browser-based game inspired by Bioshock's hacking mini-game.
 
 I quickly developed this game to ride Wordle's hype wave in early 2022.
 
-Certain modifications were made to the format such as counting the players' movements made and the time taken.
+Certain modifications were made to the format, such as counting the players' movements made and the time taken.
 
-Instead of being zapped by bots as per the original minigame, time penalties have been introduced.
+Instead of being zapped by bots as per the original mini-game, time penalties have been introduced.
 
-This project consists of a lightweight api written in Go to generate the daily maps and to serve and validate these via an API.
+This project consists of a lightweight API written in Go to generate the daily maps and to serve and validate these via an API.
 
 There's also a frontend written in Vue using Nuxt. It stores player progress locally, supports dark mode, and interacts with the API.
 
