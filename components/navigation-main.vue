@@ -115,8 +115,7 @@ export default {
         }
       },
       routes: [
-        {text: 'nav.projects', route: 'projects', colour: 'orange'},
-        {text: 'nav.tuble', href: 'https://tuble.iromera.com', colour: 'cyan'}
+        {text: 'nav.projects', route: 'projects', colour: 'orange'}
       ],
       source: 'https://github.com/superwave1999/homepage'
     }
