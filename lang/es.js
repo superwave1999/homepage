@@ -14,7 +14,6 @@ export default {
   nav: {
     home: 'Inicio',
     projects: 'Proyectos',
-    tuble: '🕹️ Tuble',
     textSource: 'Ver en GitHub',
     textSourceLong: 'Ver código fuente en GitHub',
     setDarkMode: 'Cambiar a tema oscuro',
