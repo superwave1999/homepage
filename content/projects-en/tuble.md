@@ -30,4 +30,6 @@ This project consists of a lightweight API written in Go to generate the daily m
 
 There's also a frontend written in Vue using Nuxt. It stores player progress locally, supports dark mode, and interacts with the API.
 
-!["Gameplay"](/content/projects/tuble.jpg)
+<video controls loop width="100%">
+  <source src="/content/projects/tuble-vid.mp4" type="video/mp4">
+</video>

@@ -30,4 +30,6 @@ El proyecto consiste en una API ligera escrita en Go para generar los mapas diar
 
 También hay un frontend escrito en Vue usando Nuxt. Guarda el progreso del jugador en el dispositivo local, soporta modo oscuro e interactúa con la API.
 
-!["Gameplay"](/content/projects/tuble.jpg)
+<video controls loop width="100%">
+  <source src="/content/projects/tuble-vid.mp4" type="video/mp4">
+</video>
