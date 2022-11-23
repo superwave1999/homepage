@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "@chakra-ui/nuxt": "^0.6.0",
-    "@fontsource/archivo": "^4.5.7",
+    "@fontsource/archivo": "^4.5.10",
     "@fontsource/raleway": "^4.5.11",
     "@nuxt/content": "^1.15.1",
     "@nuxtjs/emotion": "^0.1.0",
