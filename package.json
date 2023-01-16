@@ -27,7 +27,7 @@
     "feather-icons": "^4.29.0",
     "nuxt": "^2.15.8",
     "roman-numerals": "^0.3.2",
-    "simplebar-vue": "^1.6.9",
+    "simplebar-vue": "^2.0.0",
     "viewerjs": "^1.10.5"
   },
   "devDependencies": {
